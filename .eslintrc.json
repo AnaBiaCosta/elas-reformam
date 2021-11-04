@@ -1,0 +1,48 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"]
+      }
+    }
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "airbnb"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "ShareArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": ["react"],
+  "rules": {
+    "semi": ["error", "never"],
+    "react/jsx-filename-extension": ["off"],
+    "max-len": ["error", 170, { "ignoreTemplateLiterals": true }],
+    "quotes": ["error", "single", { "allowTemplateLiterals": true }],
+    "no-return-assign": ["error", "except-parens"],
+    "arrow-parens": ["error", "as-needed"],
+    "arrow-body-style": ["error", "as-needed", { "requireReturnForObjectLiteral": true }],
+    "no-tabs": ["error", { "allowIndentationTabs": true }],
+    "import/prefer-default-export": "off",
+    "comma-dangle": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "import/no-cycle": "off",
+    "import/no-extraneous-dependencies": "off",
+    "padded-blocks": "off",
+    "react/prop-types": "off",
+    "no-confusing-arrow": "off",
+    "react/jsx-props-no-spreading": "off"
+  }
+}
