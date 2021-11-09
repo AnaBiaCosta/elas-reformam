@@ -14,7 +14,7 @@ export const Routes = () => (
   <BrowserRouter>
     <Switch>
       <Route
-        path="/buscar"
+        path="/busca"
         component={Search}
       />
       <Route
