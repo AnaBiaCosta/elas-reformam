@@ -1,0 +1,20 @@
+export const ACTION_TYPES = {
+  PROFESSIONAL_DETAILS_REQUEST: 'PROFESSIONAL_DETAILS_REQUEST',
+  PROFESSIONAL_DETAILS_REQUEST_SUCCESS: 'PROFESSIONAL_DETAILS_SUCCESS',
+  PROFESSIONAL_DETAILS_REQUEST_ERROR: 'PROFESSIONAL_DETAILS_ERROR'
+}
+
+export const getProfessionalDetailsAction = payload => ({
+  type: ACTION_TYPES.PROFESSIONAL_DETAILS_REQUEST,
+  payload
+})
+
+export const sucessAction = payload => ({
+  type: ACTION_TYPES.PROFESSIONAL_DETAILS_REQUEST_SUCCESS,
+  payload
+})
+
+export const errorAction = payload => ({
+  type: ACTION_TYPES.PROFESSIONAL_DETAILS_REQUEST_ERROR,
+  payload
+})
