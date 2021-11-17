@@ -1,4 +1,3 @@
-
 export const breakpoints = {
   xsmall: '@media (min-width: 360px)',
   small: '@media (min-width: 768px)',

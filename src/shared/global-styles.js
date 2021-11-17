@@ -30,6 +30,10 @@ export default createGlobalStyle`
     line-height: 1;
   }
 
+  a, button {
+    font-family: 'Montserrat', sans-serif;
+  }
+
   ol, ul {
     list-style: none;
   }

@@ -5,6 +5,8 @@ import {
   Route
 } from 'react-router-dom'
 
+import { Header } from '../components'
+
 import {
   Search,
   Profile
@@ -12,6 +14,7 @@ import {
 
 export const Routes = () => (
   <BrowserRouter>
+    <Header />
     <Switch>
       <Route
         path="/buscar"
