@@ -19,12 +19,21 @@ export const tokens = {
     larger: '32px'
   },
   fonts: {
-    'title-1': '48px',
-    'title-2': '36px',
-    'title-3': '24px',
-    'subtitle-1': '18px',
-    'subtitle-2': '16px',
+    title1: '48px',
+    title2: '36px',
+    title3: '24px',
+    subtitle1: '18px',
+    subtitle2: '16px',
     textDefault: '14px',
-    'text-small': '12px'
+    textSmall: '12px'
+  },
+  lineHeight: {
+    title1: '60px',
+    title2: '48px',
+    title3: '24px',
+    subtitle1: '24px',
+    subtitle2: '24px',
+    textDefault: '14px',
+    textSmall: '20px'
   }
 }

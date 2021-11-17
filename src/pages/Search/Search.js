@@ -1,13 +1,14 @@
 import React from 'react'
 import { SearchContextProvider } from './_context'
 import {
-  PageWrapper
+  PageWrapper,
+  Title
 } from './Search.style'
 
 const Page = () => {
   return (
     <PageWrapper>
-      <div>Busca!</div>
+      <Title>Encontre a profissional perfeita para você :)</Title>
     </PageWrapper>
   )
 }
