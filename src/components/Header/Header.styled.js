@@ -3,17 +3,24 @@ import { tokens } from '../../shared/tokens'
 import { breakpoints } from '../../shared/media'
 
 export const Wrapper = styled.header`
-  display: flex;
-  justify-content: space-between;
   background-color: ${tokens.colors.pinkLighter};
-  padding: ${tokens.spaces.tiny} ${tokens.spaces.default};
+
+  > div {
+    display: flex;
+    justify-content: space-between;
+    padding: ${tokens.spaces.tiny} ${tokens.spaces.default};
+  }
 
   > img {
     height: 34px;
   }
 
   ${breakpoints.small} {
-    padding: 10px 150px;
+    > div {
+      max-width: 1140px;
+      padding: 10px 0;
+      margin: 0 auto;
+    }
 
     > img {
       height: 50px;

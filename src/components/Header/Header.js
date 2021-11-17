@@ -9,12 +9,14 @@ import {
 
 const Header = () => (
   <Wrapper>
-    <img src={brandMini} alt="Elas Reformam" />
+    <div>
+      <img src={brandMini} alt="Elas Reformam" />
 
-    <Nav>
-      <Link to="/buscar">Buscar profissional</Link>
-      <Avatar src={headerAvatar} alt="Avatar" />
-    </Nav>
+      <Nav>
+        <Link to="/buscar">Buscar profissional</Link>
+        <Avatar src={headerAvatar} alt="Avatar" />
+      </Nav>
+    </div>
   </Wrapper>
 )
 
