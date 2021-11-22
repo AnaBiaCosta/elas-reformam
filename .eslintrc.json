@@ -43,6 +43,7 @@
     "padded-blocks": "off",
     "react/prop-types": "off",
     "no-confusing-arrow": "off",
-    "react/jsx-props-no-spreading": "off"
+    "react/jsx-props-no-spreading": "off",
+    " react/jsx-one-expression-per-line": "off"
   }
 }

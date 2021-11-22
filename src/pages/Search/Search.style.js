@@ -21,5 +21,6 @@ export const Title = styled.h1`
   ${breakpoints.small} {
     font-size: ${tokens.fonts.title2};
     line-height: ${tokens.fonts.title2};
+    margin-bottom: 100px;
   }
 `
