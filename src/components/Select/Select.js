@@ -14,7 +14,7 @@ const Select = ({
   return (
     <Wrapper>
       <Label>{label}:</Label>
-      <SelectWrapper onChange={e => onChange(e.target.value)}>
+      <SelectWrapper onChange={e => onChange(e)}>
         <option>{placeholder}</option>
 
         {data.map(item => (
