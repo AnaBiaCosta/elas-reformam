@@ -35,10 +35,7 @@ const Card = ({
           <div>
             <Name>{name}</Name>
             <Where>
-              Atende em:
-              {state}
-              ,
-              {city}
+              Atende em: {state}, {city}
             </Where>
             <Stars>
               <img src={stars} alt="Estrelas" />
@@ -54,13 +51,10 @@ const Card = ({
 
       <Container>
         <Paragraph>
-          {jobs}
-          trabalhos realizados
+          {jobs} trabalhos realizados
         </Paragraph>
         <Value>
-          R$
-          {value}
-          / h
+          R$ {value} / h
         </Value>
         <Link to={`/perfil/${id}`}>Entrar em contato</Link>
       </Container>

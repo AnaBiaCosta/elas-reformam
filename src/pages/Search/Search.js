@@ -1,15 +1,17 @@
 import React from 'react'
 import { SearchContextProvider } from './_context'
-import { Select, ActionChip } from '../../components'
-// import { startSearch } from '../../assets/images'
+import { Select, ActionChip, Card } from '../../components'
 import { useSearchHook } from './Search.hook'
+import { startSearch } from '../../assets/images'
+import { SERVICES_TYPES } from '../../constants'
 import {
   PageWrapper,
   Title,
   SearchContainer,
-  ActionsContainer
-  // ResultWrapper,
-  // InitialState
+  ActionsContainer,
+  ResultWrapper,
+  InitialState,
+  ResultText
 } from './Search.style'
 
 const Page = () => {
@@ -19,6 +21,7 @@ const Page = () => {
     services,
     state,
     cities,
+    professionalsList,
     chooseState,
     chooseCity,
     chooseServices
@@ -58,8 +61,36 @@ const Page = () => {
                 />
               ))}
             </ActionsContainer>
-
           </SearchContainer>
+
+          <ResultWrapper>
+            {professionalsList.length > 0 ? (
+              <>
+                <ResultText>
+                  {professionalsList.length} {professionalsList.length === 1 ? 'professional oferece' : 'profissionais oferecem'} esse serviço na sua região!
+                </ResultText>
+
+                {professionalsList.map(item => (
+                  <Card
+                    key={item.id}
+                    id={item.id}
+                    avatar={item.avatar}
+                    name={item.name}
+                    state={item.state}
+                    city={item.city}
+                    services={SERVICES_TYPES[item.service]}
+                    jobs={item.jobs}
+                    value={item.value}
+                  />
+                ))}
+              </>
+            ) : (
+              <InitialState>
+                <img src={startSearch} alt="Garota segurando uma lupa" />
+                <p>Inicie sua busca!</p>
+              </InitialState>
+            )}
+          </ResultWrapper>
         </PageWrapper>
       )}
     </>

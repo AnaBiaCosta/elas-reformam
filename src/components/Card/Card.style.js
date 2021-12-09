@@ -6,6 +6,7 @@ export const Wrapper = styled.div`
   border: 1px solid ${tokens.colors.grayLighter};
   border-radius: 12px;
   padding: ${tokens.spaces.small};
+  margin-bottom: ${tokens.spaces.default};
 
   a {
     text-decoration: none;
@@ -65,13 +66,13 @@ export const Container = styled.div`
 `
 
 export const Avatar = styled.img`
-  width: 70px;
+  width: 100px;
   height: 70px;
   border-radius: 12px;
   margin-bottom: ${tokens.spaces.small};
 
   ${breakpoints.small} {
-    width: 150px;
+    width: 200px;
     height: 150px;
     margin-bottom: 0;
     margin-right: ${tokens.spaces.larger};

@@ -100,3 +100,16 @@ export const InitialState = styled.div`
     }
   }
 `
+
+export const ResultText = styled.h2`
+  color: ${tokens.colors.black};
+  font-weight: 800;
+  font-size: ${tokens.fonts.textDefault};
+  line-height: ${tokens.lineHeight.textDefault};
+  margin-bottom: ${tokens.spaces.default};
+
+  ${breakpoints.small} {
+    font-size: ${tokens.fonts.subtitle2};
+    line-height: ${tokens.lineHeight.subtitle2};
+  }
+`
